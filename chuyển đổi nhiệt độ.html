@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <tr>
+            <td>độ cờ</td>
+            <td><input type="number" id="nhậpcl"></td>
+        </tr>
+    <tr>
+        <td><button onclick="javgrop()">chuyển đổi</button></td>
+    </tr>
+
+        <script>
+            function javgrop(){
+                let doC = document.getElementById('nhậpcl').value;
+                let chuyendoi = 9/5*doC +32;
+                alert('ketqua:' + chuyendoi);
+            }
+        </script>
+</body>
+</html>

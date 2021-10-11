@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <table>
+            <tr>
+                <td>điểm lý</td>
+                <td><input type="number" id="xyz"></td>
+            </tr>
+            <tr>
+                <td>điểm hóa</td>
+                <td><input type="numbet" id="wop"></td>
+            </tr>
+            <tr>
+                <td>điểm sinh</td>
+                <td><input type="numbet" id="sex"></td>
+            </tr>
+            <tr>
+                <td><button onclick="ancomtruockeng()">99 10k điểm</button></td>
+            </tr>
+        </table>
+        <script>
+            function ancomtruockeng() {
+                let ly = +document.getElementById('xyz').value;
+                let hoa = +document.getElementById('wop').value;
+                let sinh = +document.getElementById('sex').value;
+                let tong = ly + hoa + sinh;
+                let avertage = tong/3;
+                alert('ancomtruockeng:' + tong + '\n trung binh:' + avertage)
+            }
+        </script>
+</body>
+</html>
